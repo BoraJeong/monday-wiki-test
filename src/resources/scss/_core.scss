@@ -1,0 +1,76 @@
+body {
+  color: $body-color;
+  background-color: $body-bg;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  letter-spacing: -0.02em;
+}
+
+body, text {
+  font-family: var(--font-family);
+}
+
+code {
+  font-family: var(--code-font-family);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ol, ul, dl {
+  padding: 0;
+  list-style: none;
+}
+
+.modal-content {
+  border-radius: 12px;
+
+  .modal-header {
+    background-color: #002a6d;
+    border-radius: 12px 12px 0 0;
+    border-bottom: 0;
+    padding: 12px 21px;
+
+    .modal-title {
+      color: #fff;
+      font-size: 16px;
+      font-weight: 400;
+    }
+  }
+
+  .modal-footer {
+    background-color: #eee;
+    border-radius: 0 0 12px 12px;
+  }
+}
+
+/* Scrollbar Custom */
+
+::-webkit-scrollbar {
+  height: 6px;
+  width: 6px
+}
+
+::-webkit-scrollbar-button {
+  background: #eee;
+  height: 10px
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 6px
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #bbb
+}
+
+::-webkit-scrollbar-track,::-webkit-scrollbar-track-piece {
+  background: #eee
+}
+
+::-webkit-scrollbar-corner {
+  background: #ccc
+}
