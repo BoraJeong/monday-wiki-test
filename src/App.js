@@ -8,7 +8,7 @@ function App() {
 
       <div>
         <Button onClick={function noRefCheck(){}}>
-          1개의 연결된 보드
+          1개의 연결된 보드 test
         </Button>
         <div className="test-div">테스트 중입니다.</div>
       </div>
