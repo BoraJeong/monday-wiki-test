@@ -1,12 +1,39 @@
-body {
-  color: $body-color;
-  background-color: $body-bg;
+#root {
+  height: 100%;
 }
 
-.wrap {
-  position: relative;
-}
+.content {
+  padding: 16px 20px;
+  height: 100%;
+  min-height: 650px;
+  display: flex;
+  flex-direction: column;
 
-.test-div {
-  font-size: 20px;
+  .content-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #000;
+    padding-bottom: 10px;
+  }
+
+  .content-body {
+    flex: 1 1 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .intro-content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      .intro-message {
+        text-align: center;
+
+      }
+    }
+  }
 }
