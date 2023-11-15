@@ -308,13 +308,24 @@ export const List = () => {
                         김기연입니다.저희가 이용중인 구글맵 API 중
                         textSearch API 관련하여 문의가 있어 메일 드립...
                       </div>
-                      {/*<div className="item-card__comment">
-                        <IconButton className="item__comment-btn" icon={Forum} size="small"/>
-                        <div>관련된 <span>N</span>개의 답글</div>
-                      </div>*/}
 
                       <div className="item-card__comment">
+                        <Icon icon={Forum} size="16"/>
+                        <div>관련된 <span>N</span>개의 답글</div>
+                      </div>
+
+                      {/*<div className="item-card__comment">
                         <Button className="item__comment-btn" kind="tertiary" size="xs" leftIcon={Forum}>관련된 <span>N</span>개의 답글</Button>
+                      </div>*/}
+                    </div>
+
+
+                    <div className="item-card">
+                      <div className="item-card__main">
+                        [문의] 카카오모빌리티 구글맵 textSearch API 문의
+                        건안녕하세요.카카오모빌리티 공통플랫폼개발팀
+                        김기연입니다.저희가 이용중인 구글맵 API 중
+                        textSearch API 관련하여 문의가 있어 메일 드립...
                       </div>
                     </div>
                   </div>
