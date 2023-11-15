@@ -313,12 +313,132 @@ export const List = () => {
                         <Icon icon={Forum} size="16"/>
                         <div>관련된 <span>N</span>개의 답글</div>
                       </div>
-
-                      {/*<div className="item-card__comment">
-                        <Button className="item__comment-btn" kind="tertiary" size="xs" leftIcon={Forum}>관련된 <span>N</span>개의 답글</Button>
-                      </div>*/}
                     </div>
 
+                    <div className="item-card">
+                      <div className="item-card__main">
+                        [문의] 카카오모빌리티 구글맵 textSearch API 문의
+                        건안녕하세요.카카오모빌리티 공통플랫폼개발팀
+                        김기연입니다.저희가 이용중인 구글맵 API 중
+                        textSearch API 관련하여 문의가 있어 메일 드립...
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="search-item">
+                  <div className="search-item__header">
+                    <div className="header-block">
+                      <div className="header-block__item"><span>[문의] 카카오모빌리티 구글맵 textSearch API 문의 건</span></div>
+                      <div className="header-block__item"><span>기술지원 (2023)</span></div>
+                      <div className="header-block__item header-block__item--user">
+                        <span>
+                          <div className="item__user-thumb">
+                            <img src={userThumb} alt=""/>
+                          </div>
+                        </span>
+                      </div>
+                      <div className="header-block__item"><span>2022년 11월 1일</span></div>
+                    </div>
+                  </div>
+
+                  <div className="search-item__body">
+                    <div className="item-card">
+                      <div className="item-card__main">
+                        [문의] 카카오모빌리티 구글맵 textSearch API 문의
+                        건안녕하세요.카카오모빌리티 공통플랫폼개발팀
+                        김기연입니다.저희가 이용중인 구글맵 API 중
+                        textSearch API 관련하여 문의가 있어 메일 드립...
+                      </div>
+
+                      <div className="item-card__comment">
+                        <Icon icon={Forum} size="16"/>
+                        <div>관련된 <span>N</span>개의 답글</div>
+                      </div>
+                    </div>
+
+                    <div className="item-card">
+                      <div className="item-card__main">
+                        [문의] 카카오모빌리티 구글맵 textSearch API 문의
+                        건안녕하세요.카카오모빌리티 공통플랫폼개발팀
+                        김기연입니다.저희가 이용중인 구글맵 API 중
+                        textSearch API 관련하여 문의가 있어 메일 드립...
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="search-item">
+                  <div className="search-item__header">
+                    <div className="header-block">
+                      <div className="header-block__item"><span>[문의] 카카오모빌리티 구글맵 textSearch API 문의 건</span></div>
+                      <div className="header-block__item"><span>기술지원 (2023)</span></div>
+                      <div className="header-block__item header-block__item--user">
+                        <span>
+                          <div className="item__user-thumb">
+                            <img src={userThumb} alt=""/>
+                          </div>
+                        </span>
+                      </div>
+                      <div className="header-block__item"><span>2022년 11월 1일</span></div>
+                    </div>
+                  </div>
+
+                  <div className="search-item__body">
+                    <div className="item-card">
+                      <div className="item-card__main">
+                        [문의] 카카오모빌리티 구글맵 textSearch API 문의
+                        건안녕하세요.카카오모빌리티 공통플랫폼개발팀
+                        김기연입니다.저희가 이용중인 구글맵 API 중
+                        textSearch API 관련하여 문의가 있어 메일 드립...
+                      </div>
+
+                      <div className="item-card__comment">
+                        <Icon icon={Forum} size="16"/>
+                        <div>관련된 <span>N</span>개의 답글</div>
+                      </div>
+                    </div>
+
+                    <div className="item-card">
+                      <div className="item-card__main">
+                        [문의] 카카오모빌리티 구글맵 textSearch API 문의
+                        건안녕하세요.카카오모빌리티 공통플랫폼개발팀
+                        김기연입니다.저희가 이용중인 구글맵 API 중
+                        textSearch API 관련하여 문의가 있어 메일 드립...
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="search-item">
+                  <div className="search-item__header">
+                    <div className="header-block">
+                      <div className="header-block__item"><span>[문의] 카카오모빌리티 구글맵 textSearch API 문의 건</span></div>
+                      <div className="header-block__item"><span>기술지원 (2023)</span></div>
+                      <div className="header-block__item header-block__item--user">
+                        <span>
+                          <div className="item__user-thumb">
+                            <img src={userThumb} alt=""/>
+                          </div>
+                        </span>
+                      </div>
+                      <div className="header-block__item"><span>2022년 11월 1일</span></div>
+                    </div>
+                  </div>
+
+                  <div className="search-item__body">
+                    <div className="item-card">
+                      <div className="item-card__main">
+                        [문의] 카카오모빌리티 구글맵 textSearch API 문의
+                        건안녕하세요.카카오모빌리티 공통플랫폼개발팀
+                        김기연입니다.저희가 이용중인 구글맵 API 중
+                        textSearch API 관련하여 문의가 있어 메일 드립...
+                      </div>
+
+                      <div className="item-card__comment">
+                        <Icon icon={Forum} size="16"/>
+                        <div>관련된 <span>N</span>개의 답글</div>
+                      </div>
+                    </div>
 
                     <div className="item-card">
                       <div className="item-card__main">
