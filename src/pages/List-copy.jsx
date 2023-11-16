@@ -1,5 +1,5 @@
 import React, { useEffect, useState, useMemo } from 'react';
-import {Button, Modal, ModalContent, ModalFooterButtons, Search, Checkbox, Icon, IconButton, DialogContentContainer, RadioButton, Avatar, AvatarGroup } from "monday-ui-react-core";
+import {Button, Modal, ModalContent, ModalFooterButtons, Search, Checkbox, Icon, IconButton, DialogContentContainer, RadioButton, Avatar, Dialog, Combobox } from "monday-ui-react-core";
 import userThumb from "../resources/images/user-thumb.png";
 import person1 from "../resources/images/user-thumb2.png";
 import person2 from "../resources/images/user-thumb3.png";
@@ -8,50 +8,43 @@ import {Board, Forum, Filter, Close, Calendar, AddSmall} from "monday-ui-react-c
 
 export const List = () => {
 
-  const [selectedOptions, setSelectedOptions] = useState([]);
-  const handleOptionClick = (index) => {
-    const selectedIndex = selectedOptions.indexOf(index);
+  const options = useMemo(() => [{
+    id: "이형민",
+    label: "이형민",
+    src: person1,
+    type: Avatar.types.IMG,
+    position: "(Frontend Developer)"
+  }, {
+    id: "정보라",
+    label: "정보라",
+    src: person2,
+    type: Avatar.types.IMG,
+    position: "(Product Designer)"
+  }, {
+    id: "최정연",
+    label: "최정연",
+    src: person3,
+    type: Avatar.types.IMG,
+    position: "(Brand Designer)"
+  }], []);
 
-    if (selectedIndex === -1) {
-      // 선택되지 않은 경우 선택 목록에 추가
-      setSelectedOptions([...selectedOptions, index]);
-    } else {
-      // 이미 선택된 경우 선택 목록에서 제거
-      const newSelectedOptions = [...selectedOptions];
-      newSelectedOptions.splice(selectedIndex, 1);
-      setSelectedOptions(newSelectedOptions);
-    }
-  };
-
-  const options = [
-    { name: '이형민', src: person1 },
-    { name: '정보라', src: person2 },
-    { name: '최정연', src: person3 },
-    // Add more options as needed
-  ];
-
-  const SelectedOptionsList = ({ selectedOptions, options }) => {
-    return (
-      <>
-        {selectedOptions.map((selectedIndex, index) => (
-            <Avatar key={index} size={Avatar.sizes.SMALL} src={options[selectedIndex].src} type={Avatar.types.IMG} />
-        ))}
-      </>
-    );
-  };
+  const optionRenderer = option => <div className="combobox-option">
+    <Avatar size={Avatar.sizes.SMALL} src={option.src} type={Avatar.types.IMG} />
+    <span>{option.label}</span> <span>{option.position}</span>
+  </div>;
 
   const [isModalOpen, setIsModalOpen] = useState(false);
-
   const [isFilterDialogOpen, setIsFilterDialogOpen] = useState(false);
-
   const [isSelectManagerDialogOpen, setIsSelectManagerDialogOpen] = useState(false);
 
   const openModal = () => {
     setIsModalOpen(true);
   };
+
   const closeModal = () => {
     setIsModalOpen(false);
   };
+
   const toggleFilterDialog = () => {
     setIsFilterDialogOpen(!isFilterDialogOpen);
   };
@@ -170,55 +163,16 @@ export const List = () => {
                     <div className="filter-list">
                       <h5 className="filter-list__title">담당자</h5>
                       <div className="filter-list__item" onClick={toggleSelectManagerDialog}>
-
-                        {selectedOptions.length === 0 ? (
-                          <div className="item__inner">
-                            <Icon icon={AddSmall} iconSize={16} />
-                            <span>담당자 선택</span>
-                          </div>
-                        ) : (
-                          <AvatarGroup max={2} size="small" className="avatar-group">
-                            {selectedOptions.map((selectedIndex, index) => (
-                              <Avatar key={index} size={Avatar.sizes.SMALL} src={options[selectedIndex].src} type={Avatar.types.IMG} ariaLabel={options[selectedIndex].name}/>
-                            ))}
-                          </AvatarGroup>
-                        )}
+                        <Icon icon={AddSmall} iconSize={16} />
+                        <span>담당자 선택</span>
                       </div>
-
                       <DialogContentContainer
                         id="selectManagerDialog"
                         className={`select-manager-dialog ${isSelectManagerDialogOpen ? 'visible' : ''}`}
                         type="popover"
                       >
-                        <Search
-                          placeholder="이름을 검색하세요."
-                        />
-
-                        <div className="combobox-list">
-
-                          {options.map((option, index) => (
-                            <div
-                              key={index}
-                              className={`combobox-list__option ${selectedOptions.includes(index) ? 'selected' : ''}`}
-                              onClick={() => handleOptionClick(index)}
-                            >
-                              <Avatar size={Avatar.sizes.SMALL} src={option.src} type={Avatar.types.IMG} ariaLabel={option.name}/>
-                              <span className="option__name">{option.name}</span>
-                            </div>
-                          ))}
-                          
-                        </div>
-
-                      </DialogContentContainer>
-
-
-                      {/*<DialogContentContainer
-                        id="selectManagerDialog"
-                        className={`select-manager-dialog ${isSelectManagerDialogOpen ? 'visible' : ''}`}
-                        type="popover"
-                      >
                         <Combobox options={options} optionRenderer={optionRenderer} size={Combobox.sizes.MEDIUM} placeholder="검색어를 입력하세요" />
-                      </DialogContentContainer>*/}
+                      </DialogContentContainer>
 
                     </div>
 
