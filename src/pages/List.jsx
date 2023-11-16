@@ -180,12 +180,8 @@ export const List = () => {
                         className={`select-manager-dialog ${isSelectManagerDialogOpen ? 'visible' : ''}`}
                         type="popover"
                       >
-                        <Search
-                          placeholder="이름을 검색하세요."
-                        />
-
+                        <Search placeholder="이름을 검색하세요."/>
                         <div className="combobox-list">
-
                           {options.map((option, index) => (
                             <div
                               key={index}
@@ -196,30 +192,15 @@ export const List = () => {
                               <span className="option__name">{option.name}</span>
                             </div>
                           ))}
-                          
                         </div>
-
                       </DialogContentContainer>
-
-
-                      {/*<DialogContentContainer
-                        id="selectManagerDialog"
-                        className={`select-manager-dialog ${isSelectManagerDialogOpen ? 'visible' : ''}`}
-                        type="popover"
-                      >
-                        <Combobox options={options} optionRenderer={optionRenderer} size={Combobox.sizes.MEDIUM} placeholder="검색어를 입력하세요" />
-                      </DialogContentContainer>*/}
-
                     </div>
-
                   </div>
+
                   <div className="filter-dialog__footer">
-    
+                    <Button kind="tertiary">취소</Button>
+                    <Button >완료</Button>
                   </div>
-
-
-
-
 
                 </DialogContentContainer>
             </div>
