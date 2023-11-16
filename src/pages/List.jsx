@@ -30,16 +30,6 @@ export const List = () => {
     // Add more options as needed
   ];
 
-  const SelectedOptionsList = ({ selectedOptions, options }) => {
-    return (
-      <>
-        {selectedOptions.map((selectedIndex, index) => (
-            <Avatar key={index} size={Avatar.sizes.SMALL} src={options[selectedIndex].src} type={Avatar.types.IMG} />
-        ))}
-      </>
-    );
-  };
-
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   const [isFilterDialogOpen, setIsFilterDialogOpen] = useState(false);
