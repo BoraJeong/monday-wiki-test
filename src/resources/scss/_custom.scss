@@ -183,6 +183,14 @@
   }
 }
 
+.datepicker-dialog {
+  position: absolute;
+  right: 0;
+  z-index: 2;
+  padding: 0;
+  overflow: hidden;
+ }
+
 .select-manager-dialog {
   display: none;
   position: absolute;
