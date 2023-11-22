@@ -79,33 +79,70 @@ export const List = () => {
                 {/*검색된 보드가 없을 시 메시지 노출*/}
                 {/*<div className="info-message">검색된 보드가 없습니다.</div>*/}
 
-                <ul className="board-list">
-                  <li className="board-list__item">
-                    <div className="board-list__checkbox">
-                      <Checkbox/>
-                    </div>
-                    <div className="board-list__details">
-                      <div className="board-list__board-name">
-                        <Icon icon={Board} iconSize={16} />
-                        <span>예시보드 1 (2023)</span>
+                <div className="board-list-wrapper">
+                  <h4>선택된 자산</h4>
+                  <ul className="board-list">
+                    <li className="board-list__item">
+                      <div className="board-list__checkbox">
+                        <Checkbox checked label={
+                          <div className="board-list__details">
+                            <div className="board-list__board-name">
+                              <Icon icon={Board} iconSize={16} />
+                              <span>예시보드 1 (2023)</span>
+                            </div>
+                            <div className="board-list__board-workspace">예시 워크스페이스</div>
+                          </div>
+                        }/>
                       </div>
-                      <div className="board-list__board-workspace">예시 워크스페이스</div>
-                    </div>
-                  </li>
-                  <li className="board-list__item">
-                    <div className="board-list__checkbox">
-                      <Checkbox/>
-                    </div>
-                    <div className="board-list__details">
-                      <div className="board-list__board-name">
-                        <Icon icon={Board} iconSize={16} />
-                        <span>예시보드 1 (2023)</span>
+                    </li>
+                    <li className="board-list__item">
+                      <div className="board-list__checkbox">
+                        <Checkbox checked label={
+                          <div className="board-list__details">
+                            <div className="board-list__board-name">
+                              <Icon icon={Board} iconSize={16} />
+                              <span>예시보드 1 (2023)</span>
+                            </div>
+                            <div className="board-list__board-workspace">예시 워크스페이스</div>
+                          </div>
+                        }/>
                       </div>
-                      <div className="board-list__board-workspace">예시 워크스페이스</div>
-                    </div>
-                  </li>
+                    </li>
+                  </ul>
+                </div>
 
-                </ul>
+                <div className="board-list-wrapper">
+                  <h4>전체 자산</h4>
+                  <ul className="board-list">
+                    <li className="board-list__item">
+                      <div className="board-list__checkbox">
+                        <Checkbox label={
+                          <div className="board-list__details">
+                            <div className="board-list__board-name">
+                              <Icon icon={Board} iconSize={16} />
+                              <span>예시보드 1 (2023)</span>
+                            </div>
+                            <div className="board-list__board-workspace">예시 워크스페이스</div>
+                          </div>
+                        }/>
+                      </div>
+
+                    </li>
+                    <li className="board-list__item">
+                      <div className="board-list__checkbox">
+                        <Checkbox label={
+                          <div className="board-list__details">
+                            <div className="board-list__board-name">
+                              <Icon icon={Board} iconSize={16} />
+                              <span>예시보드 1 (2023)</span>
+                            </div>
+                            <div className="board-list__board-workspace">예시 워크스페이스</div>
+                          </div>
+                        }/>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
               </div>
             </ModalContent>
             <ModalFooterButtons
