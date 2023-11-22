@@ -91,6 +91,10 @@ input {
   color: var(--primary-text-color);
 }
 
+:focus {
+  outline: none;
+}
+
 .modal-content {
   border-radius: 12px;
 

@@ -207,18 +207,12 @@ export const List = () => {
 
             <div className="content-search__filter-tags">
               <div className="filter-tags__item">
-                <span>시작 날짜 : 2023.01.11</span>
-                <IconButton className="item__close-btn" icon={Close} size="xs"/>
-              </div>
-              <div className="filter-tags__item">
-                <span>종료 날짜 : 2023.01.11</span>
+                <span>2023.01.11 ~ 2023.02.11</span>
                 <IconButton className="item__close-btn" icon={Close} size="xs"/>
               </div>
 
               <div className="filter-tags__item">
-                <div className="item__user-thumb">
-                  <img src={userThumb} alt=""/>
-                </div>
+                <Avatar size={Avatar.sizes.SMALL} src={person1} type={Avatar.types.IMG}/>
                 <span>이형민</span>
                 <IconButton className="item__close-btn" icon={Close} size="xs"/>
               </div>
@@ -284,12 +278,8 @@ export const List = () => {
                     <div className="header-block">
                       <div className="header-block__item"><span>[문의] 카카오모빌리티 구글맵 textSearch API 문의 건</span></div>
                       <div className="header-block__item"><span>기술지원 (2023)</span></div>
-                      <div className="header-block__item header-block__item--user">
-                        <span>
-                          <div className="item__user-thumb">
-                            <img src={userThumb} alt=""/>
-                          </div>
-                        </span>
+                      <div className="header-block__item">
+                        <Avatar size={Avatar.sizes.SMALL} src={person1} type={Avatar.types.IMG} ariaLabel={"이형민"}/>
                       </div>
                       <div className="header-block__item"><span>2022년 11월 1일</span></div>
                     </div>
@@ -303,82 +293,43 @@ export const List = () => {
                         김기연입니다.저희가 이용중인 구글맵 API 중
                         textSearch API 관련하여 문의가 있어 메일 드립...
                       </div>
-                    </div>
-                    <div className="item-card">
-                      <div className="item-card__main">
-                        [문의] 카카오모빌리티 구글맵 textSearch API 문의
-                        건안녕하세요.카카오모빌리티 공통플랫폼개발팀
-                        김기연입니다.저희가 이용중인 구글맵 API 중
-                        textSearch API 관련하여 문의가 있어 메일 드립...
-                      </div>
-                    </div>
-                    <div className="item-card">
-                      <div className="item-card__main">
-                        [문의] 카카오모빌리티 구글맵 textSearch API 문의
-                        건안녕하세요.카카오모빌리티 공통플랫폼개발팀
-                        김기연입니다.저희가 이용중인 구글맵 API 중
-                        textSearch API 관련하여 문의가 있어 메일 드립...
-                      </div>
-                    </div>
-                    <div className="item-card">
-                      <div className="item-card__main">
-                        [문의] 카카오모빌리티 구글맵 textSearch API 문의
-                        건안녕하세요.카카오모빌리티 공통플랫폼개발팀
-                        김기연입니다.저희가 이용중인 구글맵 API 중
-                        textSearch API 관련하여 문의가 있어 메일 드립...
-                      </div>
-                    </div>
-                    <div className="item-card">
-                      <div className="item-card__main">
-                        [문의] 카카오모빌리티 구글맵 textSearch API 문의
-                        건안녕하세요.카카오모빌리티 공통플랫폼개발팀
-                        김기연입니다.저희가 이용중인 구글맵 API 중
-                        textSearch API 관련하여 문의가 있어 메일 드립...
-                      </div>
-                    </div>
-                    <div className="item-card">
-                      <div className="item-card__main">
-                        [문의] 카카오모빌리티 구글맵 textSearch API 문의
-                        건안녕하세요.카카오모빌리티 공통플랫폼개발팀
-                        김기연입니다.저희가 이용중인 구글맵 API 중
-                        textSearch API 관련하여 문의가 있어 메일 드립...
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-
-                <div className="search-item">
-                  <div className="search-item__header">
-                    <div className="header-block">
-                      <div className="header-block__item"><span>[문의] 카카오모빌리티 구글맵 textSearch API 문의 건</span></div>
-                      <div className="header-block__item"><span>기술지원 (2023)</span></div>
-                      <div className="header-block__item header-block__item--user">
-                        <span>
-                          <div className="item__user-thumb">
-                            <img src={userThumb} alt=""/>
-                          </div>
-                        </span>
-                      </div>
-                      <div className="header-block__item"><span>2022년 11월 1일</span></div>
-                    </div>
-                  </div>
-
-                  <div className="search-item__body">
-                    <div className="item-card">
-                      <div className="item-card__main">
-                        [문의] 카카오모빌리티 구글맵 textSearch API 문의
-                        건안녕하세요.카카오모빌리티 공통플랫폼개발팀
-                        김기연입니다.저희가 이용중인 구글맵 API 중
-                        textSearch API 관련하여 문의가 있어 메일 드립...
-                      </div>
-
                       <div className="item-card__comment">
                         <Icon icon={Forum} size="16"/>
                         <div>관련된 <span>N</span>개의 답글</div>
                       </div>
                     </div>
-
+                    <div className="item-card">
+                      <div className="item-card__main">
+                        [문의] 카카오모빌리티 구글맵 textSearch API 문의
+                        건안녕하세요.카카오모빌리티 공통플랫폼개발팀
+                        김기연입니다.저희가 이용중인 구글맵 API 중
+                        textSearch API 관련하여 문의가 있어 메일 드립...
+                      </div>
+                    </div>
+                    <div className="item-card">
+                      <div className="item-card__main">
+                        [문의] 카카오모빌리티 구글맵 textSearch API 문의
+                        건안녕하세요.카카오모빌리티 공통플랫폼개발팀
+                        김기연입니다.저희가 이용중인 구글맵 API 중
+                        textSearch API 관련하여 문의가 있어 메일 드립...
+                      </div>
+                    </div>
+                    <div className="item-card">
+                      <div className="item-card__main">
+                        [문의] 카카오모빌리티 구글맵 textSearch API 문의
+                        건안녕하세요.카카오모빌리티 공통플랫폼개발팀
+                        김기연입니다.저희가 이용중인 구글맵 API 중
+                        textSearch API 관련하여 문의가 있어 메일 드립...
+                      </div>
+                    </div>
+                    <div className="item-card">
+                      <div className="item-card__main">
+                        [문의] 카카오모빌리티 구글맵 textSearch API 문의
+                        건안녕하세요.카카오모빌리티 공통플랫폼개발팀
+                        김기연입니다.저희가 이용중인 구글맵 API 중
+                        textSearch API 관련하여 문의가 있어 메일 드립...
+                      </div>
+                    </div>
                     <div className="item-card">
                       <div className="item-card__main">
                         [문의] 카카오모빌리티 구글맵 textSearch API 문의
@@ -395,12 +346,8 @@ export const List = () => {
                     <div className="header-block">
                       <div className="header-block__item"><span>[문의] 카카오모빌리티 구글맵 textSearch API 문의 건</span></div>
                       <div className="header-block__item"><span>기술지원 (2023)</span></div>
-                      <div className="header-block__item header-block__item--user">
-                        <span>
-                          <div className="item__user-thumb">
-                            <img src={userThumb} alt=""/>
-                          </div>
-                        </span>
+                      <div className="header-block__item">
+                        <Avatar size={Avatar.sizes.SMALL} src={person1} type={Avatar.types.IMG} ariaLabel={"이형민"}/>
                       </div>
                       <div className="header-block__item"><span>2022년 11월 1일</span></div>
                     </div>
@@ -414,7 +361,6 @@ export const List = () => {
                         김기연입니다.저희가 이용중인 구글맵 API 중
                         textSearch API 관련하여 문의가 있어 메일 드립...
                       </div>
-
                       <div className="item-card__comment">
                         <Icon icon={Forum} size="16"/>
                         <div>관련된 <span>N</span>개의 답글</div>
@@ -428,92 +374,14 @@ export const List = () => {
                         김기연입니다.저희가 이용중인 구글맵 API 중
                         textSearch API 관련하여 문의가 있어 메일 드립...
                       </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="search-item">
-                  <div className="search-item__header">
-                    <div className="header-block">
-                      <div className="header-block__item"><span>[문의] 카카오모빌리티 구글맵 textSearch API 문의 건</span></div>
-                      <div className="header-block__item"><span>기술지원 (2023)</span></div>
-                      <div className="header-block__item header-block__item--user">
-                        <span>
-                          <div className="item__user-thumb">
-                            <img src={userThumb} alt=""/>
-                          </div>
-                        </span>
-                      </div>
-                      <div className="header-block__item"><span>2022년 11월 1일</span></div>
-                    </div>
-                  </div>
-
-                  <div className="search-item__body">
-                    <div className="item-card">
-                      <div className="item-card__main">
-                        [문의] 카카오모빌리티 구글맵 textSearch API 문의
-                        건안녕하세요.카카오모빌리티 공통플랫폼개발팀
-                        김기연입니다.저희가 이용중인 구글맵 API 중
-                        textSearch API 관련하여 문의가 있어 메일 드립...
-                      </div>
-
                       <div className="item-card__comment">
                         <Icon icon={Forum} size="16"/>
                         <div>관련된 <span>N</span>개의 답글</div>
                       </div>
                     </div>
-
-                    <div className="item-card">
-                      <div className="item-card__main">
-                        [문의] 카카오모빌리티 구글맵 textSearch API 문의
-                        건안녕하세요.카카오모빌리티 공통플랫폼개발팀
-                        김기연입니다.저희가 이용중인 구글맵 API 중
-                        textSearch API 관련하여 문의가 있어 메일 드립...
-                      </div>
-                    </div>
                   </div>
                 </div>
-                <div className="search-item">
-                  <div className="search-item__header">
-                    <div className="header-block">
-                      <div className="header-block__item"><span>[문의] 카카오모빌리티 구글맵 textSearch API 문의 건</span></div>
-                      <div className="header-block__item"><span>기술지원 (2023)</span></div>
-                      <div className="header-block__item header-block__item--user">
-                        <span>
-                          <div className="item__user-thumb">
-                            <img src={userThumb} alt=""/>
-                          </div>
-                        </span>
-                      </div>
-                      <div className="header-block__item"><span>2022년 11월 1일</span></div>
-                    </div>
-                  </div>
 
-                  <div className="search-item__body">
-                    <div className="item-card">
-                      <div className="item-card__main">
-                        [문의] 카카오모빌리티 구글맵 textSearch API 문의
-                        건안녕하세요.카카오모빌리티 공통플랫폼개발팀
-                        김기연입니다.저희가 이용중인 구글맵 API 중
-                        textSearch API 관련하여 문의가 있어 메일 드립...
-                      </div>
-
-                      <div className="item-card__comment">
-                        <Icon icon={Forum} size="16"/>
-                        <div>관련된 <span>N</span>개의 답글</div>
-                      </div>
-                    </div>
-
-                    <div className="item-card">
-                      <div className="item-card__main">
-                        [문의] 카카오모빌리티 구글맵 textSearch API 문의
-                        건안녕하세요.카카오모빌리티 공통플랫폼개발팀
-                        김기연입니다.저희가 이용중인 구글맵 API 중
-                        textSearch API 관련하여 문의가 있어 메일 드립...
-                      </div>
-                    </div>
-                  </div>
-                </div>
               </div>
             </div>
 
